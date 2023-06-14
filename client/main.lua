@@ -24,3 +24,11 @@ function skillCheck(difficulty)
 
 	return result
 end
+
+function skillFailed()
+	SetNuiFocus(false, false)
+	inSkillCheck = false
+	result = false
+end
+
+exports("skillFailed", skillFailed)
